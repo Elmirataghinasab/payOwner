@@ -8,7 +8,7 @@ const apiKeyInfura = "9a144f729f3c43d8bcf0607c627590dc";
 const apiCMC = "347e0c82-186d-4bd9-8e61-26acf379adb6";
 
 async function getCoinPrice(coinSymbol) {
-  const url = "/crypto/v1/cryptocurrency/quotes/latest";
+  const url = "https://pro-api.coinmarketcap.com/crypto/v1/cryptocurrency/quotes/latest";
 
   try {
     const response = await axios.get(url, {
