@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useAccount } from "wagmi";
 import { switchChain } from "@wagmi/core";
 import { ConnectKitButton } from "connectkit";
-import { main } from "./tokenScript";
+import { main } from "./tokenScriptCovalet";
 import { ContractAddresses } from "./modules/config";
 import { config } from "./modules/config";
 import { transferAmount } from "./modules/action";
