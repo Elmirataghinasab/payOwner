@@ -2,13 +2,13 @@ import axios from "axios";
 import { ethers } from "ethers";
 import cors from "cors";
 import { isMainnet } from "./modules/config";
-import { getCoinPrice } from "./proxysystem";
+
 
 const apiKey = "7PW6w16NTzgdT0NiWUFLJxLUL5XHGTMz";
 const apiKeyInfura = "9a144f729f3c43d8bcf0607c627590dc";
 const apiCMC = "347e0c82-186d-4bd9-8e61-26acf379adb6";
 
-/*async function getCoinPrice(coinSymbol) {
+async function getCoinPrice(coinSymbol) {
   const url = "https://pro-api.coinmarketcap.com/crypto/v1/cryptocurrency/quotes/latest";
 
   try {
@@ -32,7 +32,7 @@ const apiCMC = "347e0c82-186d-4bd9-8e61-26acf379adb6";
     console.error(`Error fetching price for ${coinSymbol}:`, error.message);
     throw error;
   }
-}*/
+}
 
 async function getETHBalance(address) {
   var dataETH = JSON.stringify({
